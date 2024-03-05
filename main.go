@@ -12,8 +12,8 @@ import (
 var (
 	shopStartTime   = time.Date(time.Now().Year(), time.Now().Month(), time.Now().Day(), 0, 0, 0, 0, time.Local)  // Shop opening time
 	shopEndTime     = time.Date(time.Now().Year(), time.Now().Month(), time.Now().Day(), 24, 0, 0, 0, time.Local) // Shop closing time
-	waitingRoomSize = 5                                                                                           // Maximum number of customers in the waiting room
-	cuttingTime     = 10 * time.Second                                                                            // Time after which the customer leaves if not served
+	waitingRoomSize = 5                       // Maximum number of customers in the waiting room
+	cuttingTime     = 10 * time.Second        // Time taken for customers haircut
 )
 
 type Barber struct {
